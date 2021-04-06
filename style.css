@@ -45,6 +45,7 @@ body{
 	border-radius: 5px;
 	margin-bottom: 10px;
 	border: 1px solid #f5c6cb;
+	display: none;
 }
 .form form .name-details{
 	display: flex;
@@ -173,17 +174,32 @@ form .name-details .field:last-child{
 	font-size: 16px;
 	border-radius: 5px 0 0 5px;
 	outline: none;
+	opacity: 0;
+	pointer-events: none;
+	transition: all 0.2s ease;
+}
+.users .search input.active{
+	opacity: 1;
+	pointer-events: auto;
 }
 .users .search button{
 	width: 47px;
 	height: 42px;
 	border: none;
 	outline: none;
-	color: #fff;
-	background: #333;
+	color: #333;
+	background: #fff;
 	cursor: pointer;
 	font-size: 17px;
 	border-radius: 0 5px 5px 0;
+	transition: all 0.2s ease;
+}
+.users .search button.active{
+	color: #fff;
+	background: #333;
+}
+.users .search button.active i::before{
+	content: "\f00d";
 }
 .users-list{
 	max-height: 350px;
