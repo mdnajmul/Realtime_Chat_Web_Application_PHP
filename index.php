@@ -11,7 +11,7 @@
         
         <div class="wrapper">
             <section class="form signup">
-                <header style="text-align: center;">Chat App</header>
+                <header style="text-align: center; color: blue;">Chat App</header>
                 <form action="#" enctype="multipart/form-data">
                     <div class="error-txt"></div>
                     <div class="name-details">

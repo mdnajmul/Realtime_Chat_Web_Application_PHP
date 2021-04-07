@@ -10,7 +10,7 @@
         
         <div class="wrapper">
             <section class="form login">
-                <header style="text-align: center;">Chat App</header>
+                <header style="text-align: center; color: blue;">Chat App</header>
                 <form action="#">
                     <div class="error-txt"></div>
                     <div class="field input">
