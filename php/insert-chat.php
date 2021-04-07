@@ -13,7 +13,7 @@
                                         VALUES ({$incoming_id}, {$outgoing_id}, '{$message}')") or die();
         }
     }else{
-        header("../login.php");
+        header("location: ../login.php");
     }
 
 ?>

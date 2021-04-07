@@ -1,5 +1,8 @@
 <?php
     session_start();
+    if(!isset($_SESSION['UNIQUE_ID'])){
+        header("location: ../login.php");
+    }
     include_once "config.php";
     $outgoing_id = $_SESSION['UNIQUE_ID'];
     $searchTerm = mysqli_real_escape_string($conn, $_POST['searchTerm']);

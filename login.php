@@ -1,9 +1,16 @@
+<?php
+    session_start();
+    if(isset($_SESSION['UNIQUE_ID'])){ //if user is logged in
+        header("location: users.php");
+    }
+?>
+
 <?php include_once "header.php"; ?>
     <body>
         
         <div class="wrapper">
             <section class="form login">
-                <header>Realtime Chat App</header>
+                <header style="text-align: center;">Chat App</header>
                 <form action="#">
                     <div class="error-txt"></div>
                     <div class="field input">
