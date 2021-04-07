@@ -32,8 +32,10 @@
                                 </div>';
                 }
             }
-            echo $output;
+        }else{
+            $output .= '<div class="text">No messages are available. Once you send message they will appear here.</div>';
         }
+        echo $output;
         
     }else{
         header("location: ../login.php");
